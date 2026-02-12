@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#EEEEEE] text-[#222831];
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300 hover:shadow-xl;
+  }
+  
+  .btn-primary {
+    @apply bg-[#00ADB5] text-white px-6 py-3 rounded-lg font-semibold 
+           hover:bg-[#00969e] transition-all duration-300 transform hover:scale-105
+           focus:outline-none focus:ring-2 focus:ring-[#00ADB5] focus:ring-opacity-50;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#393E46] text-white px-4 py-2 rounded-lg font-medium
+           hover:bg-[#2d3239] transition-all duration-300;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 border-2 border-[#EEEEEE] rounded-lg 
+           focus:border-[#00ADB5] focus:outline-none focus:ring-2 focus:ring-[#00ADB5] focus:ring-opacity-20
+           transition-all duration-300 bg-white;
+  }
+  
+  .badge {
+    @apply px-3 py-1 rounded-full text-sm font-semibold;
+  }
+  
+  .badge-success {
+    @apply bg-green-100 text-green-800;
+  }
+  
+  .badge-warning {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+  
+  .badge-info {
+    @apply bg-[#00ADB5] bg-opacity-20 text-[#00ADB5];
+  }
+}
